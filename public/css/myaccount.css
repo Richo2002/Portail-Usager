@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+body > main {
+    width: 50%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main > img {
+    height: 100px;
+    width: 100px;
+}
+
+main > h2 {
+    text-decoration: underline;
+    /* color: #0A3764; */
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+main > div > span {
+    margin-bottom: 10px;
+}
+
+main > a {
+    background-color: #0A3764;
+    color: white;
+    padding: 8px;
+    border: 1px solid #0A3764;
+    border-radius: 3px;
+    width: 100px;
+}

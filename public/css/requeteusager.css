@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span {
+    align-self: center;
+    font-size: 1.7em;
+}
+

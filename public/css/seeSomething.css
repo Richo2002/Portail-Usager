@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+main > h1{
+    width: 960px;
+    margin: 30px auto;
+}
+
+main > form {
+    width: 960px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+main > form > a {
+    background-color: #0A3764;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+main > form > input {
+    width: 250px;
+    border: 0.1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    border: 0.1px solid rgba(0, 0, 0, 0.5);
+}
+main > form > input:focus {
+    outline: 0.1px solid rgba(0, 0, 0, 0.5);
+}
+
+
+
