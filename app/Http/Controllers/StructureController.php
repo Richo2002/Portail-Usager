@@ -21,7 +21,6 @@ class StructureController extends Controller
         DB::table('structures')->insert([
             'code' => $request->code,
             'description' => $request->description,
-            'actif' => $request->actif,
             'category_id' => intval($request->categorie),
         ]);
         
@@ -39,7 +38,6 @@ class StructureController extends Controller
             ->update([
                 'code' => $request->code,
                 'description' => $request->description,
-                'actif' => $request->actif,
                 'category_id' => intval($request->categorie),
             ]);
         

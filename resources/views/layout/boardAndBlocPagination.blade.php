@@ -35,7 +35,7 @@
                 </table>
             </div>
             <div id="blocPagination">
-                {{  (isset($serviceByStructure)) ?  $serviceByStructure->links() : $serviceByThematic->links() }}
+                {{  (isset($serviceByStructure)) ?  $serviceByStructure->onEachSide(1)->links("vendor.pagination.default") : $serviceByThematic->onEachSide(1)->links("vendor.pagination.default") }}
                 {{-- @if ((isset($serviceByStructure) AND count($serviceByStructure) > 10)  OR (isset($serviceByThematic) AND count($serviceByThematic) > 10))
                     <form action="" method="post">
                         <select name="" id="">

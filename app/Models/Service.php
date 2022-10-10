@@ -16,7 +16,6 @@ class Service extends Model
         'timeLimit',
         'text',
         "observation",
-        'actif'
     ];
 
     /**

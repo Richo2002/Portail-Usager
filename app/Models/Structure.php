@@ -12,7 +12,6 @@ class Structure extends Model
     protected $fillable = [
         "code",
         "description",
-        "actif",
     ];
 
     public function services()

@@ -1,8 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    max-width: 100%;
-    min-width: 100%;
+    width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -32,8 +31,7 @@ body > section > article {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0px 20%;
-    padding-top: 40px;
+    padding-top: 40px; 
     box-sizing: border-box;
 }
 
@@ -43,10 +41,8 @@ body > section > article {
     justify-content: center;
     width: 210px;
     height: 150px;
-    margin-bottom: 40px;
     box-sizing: border-box;
-    padding-left: 25px;
-    margin-right: 40px;
+    margin: 40px;
 }
 
 #thematiqueItem1{
@@ -93,8 +89,41 @@ body > section > article {
 
 h4{
     text-transform: uppercase;
+    text-align: center;
 }
 
 #thematiqueItem1 > i, #thematiqueItem2 > i, #thematiqueItem3 > i{
     font-size: 50px;
+    align-self: center;
+}
+
+@media screen and (max-width: 944px){
+    #banner > img {
+        height: 300px;
+    }
+
+    h4{
+        font-size: 0.9em;
+    }
+    body > section h2 {
+        font-size: 1em;
+    }
+
+    #thematiqueItem1 > i, #thematiqueItem2 > i, #thematiqueItem3 > i{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 350px){ 
+    #banner > img {
+        height: 250px;
+    }
+
+    body > section h2 {
+        font-size: 0.8em;
+    }
+
+    #thematiqueItem1 > i, #thematiqueItem2 > i, #thematiqueItem3 > i{
+        font-size: 30px;
+    }
 }

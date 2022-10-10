@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/seeMoreAboutService.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/responsive.js"></script>
 </head>
 <body>
     @include('layout.header')

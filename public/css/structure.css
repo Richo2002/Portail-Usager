@@ -39,7 +39,7 @@ body {
 }
 
 body > form {
-    width: 960px;
+    width: 95%;
     color: #212529;
     margin: auto;
     margin-bottom: 30px;
@@ -70,7 +70,6 @@ form > div > select, form > div > input{
 
 form > div > select:first-child {
     margin-right: 10px;
-    /* margin-bottom: 30px; */
 }
 
 form > div > select:focus, form > div > input:focus{
@@ -81,17 +80,59 @@ form > div > input {
     display: block;
     width: 250px;
     border: 0.1px solid rgba(0, 0, 0, 0.5);
-    align-self: baseline;
     position: absolute;
     right: 0;
-    /* margin-bottom: 10px; */
 }
 
-/* form > input {
-    padding: 9px 12px;
-    border-radius: 3px;
-    border: none;
-    background-color: #0A3764;
-    color: white;
-    cursor: pointer;
-} */
+@media screen and (max-width: 944px){
+    #banner > #bluredBanner > h1 {
+        font-size: 1.5em;
+    }
+
+    form > div > input,  form > div > select{
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 800px){ 
+    form > div {
+        flex-direction: column;
+    }
+
+    form > div > input {
+        position: relative;
+    }
+
+    form > div > * {
+        margin-bottom: 10px;
+    }
+
+    form > div > input,  form > div > select{
+        width: 350px;
+    }
+ }
+
+@media screen and (max-width: 700px){ 
+    #banner > img {
+        height: 250px;
+    }
+
+    #banner > #bluredBanner > h1 {
+        font-size: 0.8em;
+    }
+
+    form > span {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 380px){ 
+    form > div > input,  form > div > select{
+        width: 98%;
+    }
+
+    #boardAndBlocPagination > center{
+        font-size: 15px;
+    }
+}
+ 

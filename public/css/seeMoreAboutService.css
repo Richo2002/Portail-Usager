@@ -17,7 +17,17 @@ body {
 h1 {
     color: #0A3764;
     margin-left: 25px;
-    font-size: 1.3em !important;
+    font-size: 1.4em;
+}
+
+
+main {
+    width: 100%;
+}
+
+main > div {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 main > div:nth-child(2) > span {
@@ -32,6 +42,27 @@ main > div:nth-child(2) > span > i {
 
 main > div:nth-child(2) > p {
     margin-left: 70px;
-    width: 800px;
+    width: 70%;
     font-size: 1.1em;
+}
+
+@media screen and (max-width: 600px){
+    #banner > img {
+        height: 250px;
+    }
+
+    h1 {
+        margin-left: 10px;
+        font-size: 1em;
+    }
+    
+    main > div:nth-child(2) > span {
+        margin-left: 25px;
+        font-size: 0.9em !important;
+    }
+
+    main > div:nth-child(2) > p {
+        margin-left: 40px;
+        font-size: 1em;
+    }
 }

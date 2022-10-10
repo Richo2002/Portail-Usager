@@ -19,7 +19,6 @@ class ThematicController extends Controller
        $thematic = Thematic::create([
            'description' => $request->description,
            'icon' => $request->icon,
-           'actif' => $request->actif
        ]);
 
        return redirect()->route('thematiques');

@@ -12,7 +12,6 @@ class Category extends Model
     protected $fillable = [
         "code",
         "description",
-        "actif",
     ];
 
     public function structures()

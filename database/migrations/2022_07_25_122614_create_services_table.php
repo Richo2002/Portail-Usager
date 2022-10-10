@@ -24,7 +24,6 @@ return new class extends Migration
             $table->text('text');
             $table->text("observation");
             $table->foreignId('user_id')->constrained();
-            $table->boolean('actif');
             $table->timestamps();
         });
     }

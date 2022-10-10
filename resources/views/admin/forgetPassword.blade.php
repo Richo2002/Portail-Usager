@@ -17,9 +17,6 @@
         @if (Session::has('status'))
             <span>{{ Session::get('status') }}</span> <br>
         @endif
-        {{-- @error('email')
-            <span class="alert alert-danger">{{ $message }}</span>
-        @enderror --}}
         <a href="/admin">Retour a la page de connexion</a>
     </form>
 </body>

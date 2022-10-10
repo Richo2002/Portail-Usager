@@ -13,6 +13,7 @@
     </div>
         @guest
             <nav>
+                <i class="fa-solid fa-bars" id="menu"></i>
                 <ul>
                     <li><a href="/" id="{{ (Route::currentRouteName() == 'seeHomePage') ? 'enable' : '' }}">Accueil</a></li>
                     <li><a href="/#thematic_bloc" id="{{ Route::currentRouteName() == 'seeServiceByThematic' ? 'enable' : '' }}">Demarche par thematique</a></li>

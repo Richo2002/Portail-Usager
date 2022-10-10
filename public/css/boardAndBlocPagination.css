@@ -1,18 +1,20 @@
 #boardAndBlocPagination {
     width: 100%;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 #board {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 95%;
+    align-self: center;
 }
 
 #board > table {
-    width: 960px;
+    width: 100%;
+    box-sizing: border-box;
     margin-bottom: 30px;
-    border-collapse: collapse;
+    border-collapse: collapse;    
 }
 
 #boardTitle {
@@ -25,22 +27,16 @@
     padding: 10px;
 }
 
-/* #board > table > thead, #board > table > tr {
-    width: 960px;
-} */
-
 #board > table > thead{
     color: white;
     background-color: #0A3764;
     font-size: 1.2em;
-
 }
 
 #board > table > thead:first-child {
     background-color: #0A3764;
     border-bottom: 1px solid white;
 }
-
 
 #board > table td {
     font-size: 1em;
@@ -56,33 +52,13 @@
 }
 
 #blocPagination {
-    width: 960px;
+    box-sizing: border-box;
+    width: 95%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
 }
-
-/* #blocPagination > form {
-    display: block;
-    box-sizing: border-box;
-    padding: 8px 0px 8px 8px;
-    border-radius: 3px;
-    width: 200px;
-    box-sizing: border-box;
-}
-
-#blocPagination > form > select {
-    height: 100%;
-    width: 100%;
-    background-color: white;
-}
-
-#blocPagination > form > select:focus{
-    outline: 1px solid #0A3764;
-    box-shadow: 1px 1px 1px 1px #0A3764;
-} */
 
 #blocPagination > nav {
+    width: 100% !important;
     box-sizing: border-box;
     padding: 0;
 }
@@ -109,3 +85,33 @@
 .disabled > *{
     color: #212529 !important;
 }
+
+@media screen and (max-width: 944px){
+    #board > table > thead{
+        font-size: 1em;
+    }
+
+    #board > table td {
+        font-size: 0.9em;
+    }
+    
+}
+
+@media screen and (max-width: 600px){ 
+    #blocPagination > nav > ul > li > a, #blocPagination > nav > ul > li > span{
+        padding: 5px 8px;
+     }
+}
+ 
+
+@media screen and (max-width: 350px){ 
+    #board > table td {
+        font-size: 0.7em;
+        padding-right: 3px;
+    }
+
+    #blocPagination > nav > ul > li > a, #blocPagination > nav > ul > li > span{
+        padding: 5px 6px;
+     }
+}
+ 

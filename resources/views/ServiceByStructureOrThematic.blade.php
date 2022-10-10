@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/boardAndBlocPagination.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/js/structure.js"></script>
+    <script src="/js/responsive.js"></script>
 </head>
 <body>
     @include('layout.header')

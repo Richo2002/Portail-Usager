@@ -71,13 +71,6 @@
                         <option value="0">Sélectionner la structure</option>
                     </select>
             </div>
-            <div class="inputBloc">
-                <label for="actif">Actif * :</label>
-                <select name="actif" id="actif">
-                    <option value="1" {{ (isset($user) AND $user->actif==1) ? "Selected" : "" }}>Oui</option>
-                    <option value="0" {{ (isset($user) AND $user->actif==0) ? "Selected" : "" }}>Non</option>
-                </select>
-            </div>
         @endif
         <input type="submit" value="{{ isset($user) ? "Modifier" : "Ajouter" }}" id="addUser">
     </form>

@@ -30,13 +30,6 @@
         @error('icon')
                 <span class="alert alert-danger">{{ $message }}</span>
         @enderror
-        <div class="inputBloc">
-            <label for="actif">Actif * :</label>
-            <select name="actif" id="actif">
-                <option value="1" {{ (isset($thematic) AND $thematic->actif==1) ? "Selected" : "" }}>Oui</option>
-                <option value="0" {{ (isset($thematic) AND $thematic->actif==0) ? "Selected" : "" }}>Non</option>
-            </select>
-        </div>
         <input type="submit" value="{{ isset($thematic) ? "Modifier" : "Ajouter" }}">
     </form>
     @include('layout.footer')

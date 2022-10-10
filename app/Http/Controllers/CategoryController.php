@@ -17,7 +17,6 @@ class CategoryController extends Controller
         $categorie = Category::create([
             'code' => $request->code,
             'description' => $request->description,
-            'actif' => $request->actif
         ]);
 
         return redirect()->route('categories');

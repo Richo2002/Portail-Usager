@@ -12,7 +12,6 @@ class Thematic extends Model
 
     protected $fillable = [
         "description",
-        "actif",
         "icon",
     ];
 

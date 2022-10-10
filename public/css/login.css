@@ -44,7 +44,6 @@ form > input:focus {
 }
 
 input[type='submit'] {
-    /* width: 100px; */
     padding: 9px 50px;
     border-radius: 3px;
     border: none;

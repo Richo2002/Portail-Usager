@@ -38,13 +38,6 @@
                 @endforeach
             </select>   
         </div>
-        <div class="inputBloc">
-            <label for="actif">Actif * :</label>
-            <select name="actif" id="actif">
-                <option value="1" {{ (isset($structure) AND $structure->actif==1) ? "Selected" : "" }}>Oui</option>
-                <option value="0" {{ (isset($structure) AND $structure->actif==0) ? "Selected" : "" }}>Non</option>
-            </select>
-        </div>
         <input type="submit" value="{{ isset($structure) ? "Modifier" : "Ajouter" }}">
     </form>
     @include('layout.footer')

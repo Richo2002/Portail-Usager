@@ -29,7 +29,7 @@ class UserController extends Controller
 
         $data = ['name' => $request->name, 'firstname' => $request->firstname, 'email' => $request->email, 'password' => $userPassword];
 
-        $user = User::where('role','ADMIN')->find(Auth::user()->id);
+        $user = User::where('role','ADMIN')->findOr(Auth::user()->id);
 
         foreach ([$request->email, $user->email] as $recipient) {
             Mail::to($recipient)->send(new NewUser($data));
@@ -41,7 +41,6 @@ class UserController extends Controller
             'email' => $request->email,
             'phone' => $request->phone,
             'role' => $request->role==0 ? 'USER' : 'ADMIN',
-            'actif' => intval($request->actif),
             'structure_id' => intval($request->structure),
             'password' => Hash::make($userPassword),
         ]);
@@ -64,7 +63,6 @@ class UserController extends Controller
                 'email' => $request->email,
                 'phone' => $request->phone,
                 'role' => $request->role==0 ? 'USER' : 'ADMIN',
-                'actif' => intval($request->actif),
                 'structure_id' => intval($request->structure),
                 'password' => Hash::make(Random::generate(7)),
         ]);
